@@ -1,4 +1,4 @@
-FROM php:7.3-fpm-alpine
+FROM php:7.4-fpm-alpine
 
 # Add wait-for
 ADD https://raw.githubusercontent.com/eficode/wait-for/master/wait-for /bin/wait-for.sh
