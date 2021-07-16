@@ -1,7 +1,7 @@
 FROM php:7.4-fpm-alpine
 
 # Add wait-for
-ADD https://raw.githubusercontent.com/eficode/wait-for/master/wait-for /bin/wait-for.sh
+ADD wait-for.sh /bin/wait-for.sh
 RUN chmod +x /bin/wait-for.sh
 
 # Add S6 supervisor (for graceful stop)
