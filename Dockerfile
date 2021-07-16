@@ -22,3 +22,4 @@ COPY start-fpm.sh /etc/services.d/php_fpm/run
 RUN chmod 755 /etc/services.d/php_fpm/run
 
 COPY nginx.conf /etc/nginx/
+RUN rm /etc/nginx/conf.d/default.conf
